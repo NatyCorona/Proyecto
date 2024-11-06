@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html">
+    <h:head>
+        <title>Frijol</title>
+         <h:outputStylesheet library="webjars" name="bootstrap/5.3.3/css/bootstrap.min-jsf.css"></h:outputStylesheet>
+        
+    </h:head>
+    <h:body>
+        <nav class="navbar navbar-expand-lg" style="background-color: #D8BFD8">
+            <div class="container-fluid">
+                <h:outputLink value="index.xhtml" class="col-2">
+                     <h:graphicImage class="img-fluid" library="navbarypie" name="#{navbar.logo}" />
+                </h:outputLink>
+                <div class="collapse navbar-collapse col-10" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Catalogo.xhtml">#{navbar.opcion1}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">#{navbar.opcion2}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">#{navbar.opcion3}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">#{navbar.opcion4}</a>
+                        </li>
+                        
+                    </ul>
+                    <form class="d-flex " role="search">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <h:outputLink value="#">
+                                    <h:graphicImage class="img-fluid" library="navbarypie" name="#{navbar.buscar}" />
+                                </h:outputLink>
+                            </li>
+                            <li class="nav-item">
+                                <h:outputLink value="#">
+                                    <h:graphicImage class="img-fluid" library="navbarypie" name="#{navbar.bolsa}" />
+                                </h:outputLink>
+                            </li>
+                            <li class="nav-item">
+                                <h:outputLink value="#">
+                                    <h:graphicImage class="img-fluid" library="navbarypie" name="#{navbar.sesion}" />
+                                </h:outputLink>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        
+        <h:outputScript library="webjars" name="bootstrap/5.3.3/js/bootstrap.min.js"></h:outputScript>
+    </h:body>
+    
+    <footer class="mt-5" style="background-color: #D8BFD8">
+        <div class="container py-4">
+            <div class="row text-center mb-4">
+                <div class="col-md-4">
+                    <h:outputLink value="#" style="color: black; text-decoration: none;">
+                        <h:graphicImage class="img-fluid" library="navbarypie" name="#{footer.iconEnvio}" />
+                        #{footer.envio}
+                    </h:outputLink>
+                </div>
+                <div class="col-md-4">
+                    <h:outputLink value="#" style="color: black; text-decoration: none;">
+                        <h:graphicImage class="img-fluid" library="navbarypie" name="#{footer.iconDevolucion}" />
+                        #{footer.devolucion}
+                    </h:outputLink>
+                </div>
+                <div class="col-md-4">
+                    <h:outputLink value="#" style="color: black; text-decoration: none;">
+                        <h:graphicImage class="img-fluid" library="navbarypie" name="#{footer.iconContacto}" />
+                        #{footer.contacto}
+                    </h:outputLink>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-3">
+                    <p>&copy;#{footer.copy}</p>
+                </div>
+                <div class="col-3">
+                    <a href="#" style="color: black; text-decoration: none;">#{footer.nosotros}</a>
+                </div>
+                <div class="col-3">
+                    <a href="#" style="color: black; text-decoration: none;">#{footer.condiciones}</a>
+                </div>
+                <div class="col-3">
+                    <h:outputLink value="#">
+                        <h:graphicImage class="img-fluid" library="navbarypie" name="#{footer.iconFacebook}" />
+                    </h:outputLink>
+                    <h:outputLink value="#">
+                        <h:graphicImage class="img-fluid" library="navbarypie" name="#{footer.iconInstagram}" />
+                    </h:outputLink>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>

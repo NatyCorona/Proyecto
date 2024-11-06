@@ -4,19 +4,18 @@
       xmlns:h="jakarta.faces.html">
     <h:head>
         <title>Catalogo</title>
-        <h:outputStylesheet library="webjars" name="bootstrap/5.3.3/css/bootstrap.min-jsf.css"></h:outputStylesheet>
-        
+         <h:outputStylesheet library="webjars" name="bootstrap/5.3.3/css/bootstrap.min-jsf.css"></h:outputStylesheet>
     </h:head>
     <h:body>
-        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #D8BFD8">
+        <nav class="navbar navbar-expand-lg" style="background-color: #D8BFD8">
             <div class="container-fluid">
                 <h:outputLink value="index.xhtml" class="col-2">
-                     <h:graphicImage class="img-fluid" library="navbarypie" name="#{navbar.logo}" />
+                    <h:graphicImage class="img-fluid" library="navbarypie" name="#{navbar.logo}" />
                 </h:outputLink>
                 <div class="collapse navbar-collapse col-10" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="Catalogo.xhtml">#{navbar.opcion1}</a>
+                            <a class="nav-link active" aria-current="page" href="Catalogo.xhtml">#{navbar.opcion1}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">#{navbar.opcion2}</a>
@@ -30,7 +29,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">#{navbar.opcion5}</a>
                         </li>
-                        
                     </ul>
                     <form class="d-flex " role="search">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -54,30 +52,9 @@
                 </div>
             </div>
         </nav>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <h:graphicImage class="d-block w-100" library="inicio" name="#{inicio.carrusel1}" />
-                </div>
-                <div class="carousel-item">
-                    <h:graphicImage class="d-block w-100" library="inicio" name="#{inicio.carrusel2}" />
-                </div>
-                <div class="carousel-item">
-                    <h:graphicImage class="d-block w-100" library="inicio" name="#{inicio.carrusel3}" />
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <div class="container mt-3 mb-3">
-            <h1>Lo más nuevo</h1>
-            <div class="row justify-content-around">
+        <div class="container mt-5">
+            <h1>Catalogo</h1>
+            <div class="row justify-content-around mt-5">
                 <div class="card col-2" style="box-shadow: 0px 4px 8px #00D8D8; padding: 10px;">
                     <a href="#" style="text-decoration: none; color: black;">
                         <h:graphicImage class="img-fluid card-img-top" library="anillos" name="#{anillos.imagenAnillo1}" />
@@ -87,6 +64,16 @@
                             <h5 class="card-text">#{anillos.precioAnillo1}</h5>
                         </div>
                     </a>
+                </div>
+                <div class="card col-2" style="box-shadow: 0px 4px 8px #00D8D8; padding: 10px;">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <h:graphicImage class="img-fluid card-img-top" library="pulseras" name="#{pulseras.imagenPulsera2}" />
+                        <div class="card-body">
+                            <h4 class="card-title">#{pulseras.pulsera2}</h4>
+                            <p class="card-text">#{pulseras.descPulsera2}</p>
+                            <h5 class="card-text">#{pulseras.precioPulsera2}</h5>
+                        </div>
+                     </a>
                 </div>
                 <div class="card col-2" style="box-shadow: 0px 4px 8px #00D8D8; padding: 10px;">
                     <a href="#" style="text-decoration: none; color: black;">
@@ -108,6 +95,8 @@
                         </div>
                      </a>
                 </div>
+            </div>
+            <div class="row justify-content-around mt-5">
                 <div class="card col-2" style="box-shadow: 0px 4px 8px #00D8D8; padding: 10px;">
                     <a href="#" style="text-decoration: none; color: black;">
                         <h:graphicImage class="img-fluid card-img-top" library="collares" name="#{collar.imagenCollar1}" />
@@ -128,60 +117,70 @@
                         </div>
                      </a>
                 </div>
+                <div class="card col-2" style="box-shadow: 0px 4px 8px #00D8D8; padding: 10px;">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <h:graphicImage class="img-fluid card-img-top" library="aretes" name="#{aretes.imagenArete2}" />
+                        <div class="card-body">
+                            <h4 class="card-title">#{aretes.arete2}</h4>
+                            <p class="card-text">#{aretes.descArete2}</p>
+                            <h5 class="card-text">#{aretes.precioArete2}</h5>
+                        </div>
+                     </a>
+                </div>
+                <div class="card col-2" style="box-shadow: 0px 4px 8px #00D8D8; padding: 10px;">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <h:graphicImage class="img-fluid card-img-top" library="pulseras" name="#{pulseras.imagenPulsera3}" />
+                        <div class="card-body">
+                            <h4 class="card-title">#{pulseras.pulsera3}</h4>
+                            <p class="card-text">#{pulseras.descPulsera3}</p>
+                            <h5 class="card-text">#{pulseras.precioPulsera3}</h5>
+                        </div>
+                     </a>
+                </div>
+            </div>
+            <div class="row justify-content-around mt-5">
+                <div class="card col-2" style="box-shadow: 0px 4px 8px #00D8D8; padding: 10px;">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <h:graphicImage class="img-fluid card-img-top" library="collares" name="#{collar.imagenCollar2}" />
+                        <div class="card-body">
+                            <h4 class="card-title">#{collar.collar2}</h4>
+                            <p class="card-text">#{collar.descCollar2}</p>
+                            <h5 class="card-text">#{collar.precioCollar2}</h5>
+                        </div>
+                     </a>
+                </div>
+                <div class="card col-2" style="box-shadow: 0px 4px 8px #00D8D8; padding: 10px;">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <h:graphicImage class="img-fluid card-img-top" library="anillos" name="#{anillos.imagenAnillo3}" />
+                        <div class="card-body">
+                            <h4 class="card-title">#{anillos.anillo3}</h4>
+                            <p class="card-text">#{anillos.descAnillo3}</p>
+                            <h5 class="card-text">#{anillos.precioAnillo3}</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-2" style="box-shadow: 0px 4px 8px #00D8D8; padding: 10px;">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <h:graphicImage class="img-fluid card-img-top" library="aretes" name="#{aretes.imagenArete3}" />
+                        <div class="card-body">
+                            <h4 class="card-title">#{aretes.arete3}</h4>
+                            <p class="card-text">#{aretes.descArete3}</p>
+                            <h5 class="card-text">#{aretes.precioArete3}</h5>
+                        </div>
+                     </a>
+                </div>
+                <div class="card col-2" style="box-shadow: 0px 4px 8px #00D8D8; padding: 10px;">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <h:graphicImage class="img-fluid card-img-top" library="collares" name="#{collar.imagenCollar3}" />
+                        <div class="card-body">
+                            <h4 class="card-title">#{collar.collar3}</h4>
+                            <p class="card-text">#{collar.descCollar3}</p>
+                            <h5 class="card-text">#{collar.precioCollar3}</h5>
+                        </div>
+                     </a>
+                </div>
             </div>
         </div>
-        <a href="#" style="text-decoration: none; color: black;">
-            <div class="container mt-3" style="box-shadow: 0px 4px 8px #FFDB58; padding: 10px;">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-4">
-                        <h:graphicImage class="img-fluid" library="inicio" name="#{inicio.catImagen1}" style="border-radius: 20px"/>
-                    </div>
-                    <div class="col-6">
-                        <h1>#{inicio.categoria1}</h1>
-                        <p>#{inicio.catDesp1}</p>
-                    </div>
-                </div>  
-            </div>
-        </a>
-        <a href="#" style="text-decoration: none; color: black;">
-            <div class="container mt-3" style="box-shadow: 0px 4px 8px #FFDB58; padding: 10px;">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-6">
-                        <h1>#{inicio.categoria2}</h1>
-                        <p>#{inicio.catDesp2}</p>
-                    </div>
-                    <div class="col-4">
-                        <h:graphicImage class="img-fluid" library="inicio" name="#{inicio.catImagen2}" style="border-radius: 20px"/>
-                    </div>
-                </div>  
-            </div>
-        </a>
-        <a href="#" style="text-decoration: none; color: black;">
-            <div class="container mt-3" style="box-shadow: 0px 4px 8px #FFDB58; padding: 10px;">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-4">
-                        <h:graphicImage class="img-fluid" library="inicio" name="#{inicio.catImagen3}" style="border-radius: 20px"/>
-                    </div>
-                    <div class="col-6">
-                        <h1>#{inicio.categoria3}</h1>
-                        <p>#{inicio.catDesp3}</p>
-                    </div>
-                </div>  
-            </div>
-        </a>
-        <a href="#" style="text-decoration: none; color: black;">
-            <div class="container mt-3" style="box-shadow: 0px 4px 8px #FFDB58; padding: 10px;">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-6">
-                        <h1>#{inicio.categoria4}</h1>
-                        <p>#{inicio.catDesp4}</p>
-                    </div>
-                    <div class="col-4">
-                        <h:graphicImage class="img-fluid" library="inicio" name="#{inicio.catImagen4}" style="border-radius: 20px"/>
-                    </div>
-                </div>  
-            </div>
-        </a>
         <footer class="mt-5" style="background-color: #D8BFD8">
             <div class="container py-4">
                 <div class="row text-center mb-4">
